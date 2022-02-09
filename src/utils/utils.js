@@ -63,7 +63,7 @@ const searchSpecificity = ({ type, locale, specificity }, data) => {
         possibleCombination = [`${locale} *(*)`, `* *(*)`]
     }
 
-    const finalPossibility = possibleCombination || `* *(*)`
+    const finalPossibility = possibleCombination || [`* *(*)`]
 
     console.log(finalPossibility)
 
